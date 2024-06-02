@@ -4,12 +4,14 @@ import Home from './pages/Home';
 import Layout from './pages/Layout';
 import Post from './pages/Post';
 import Resume from './pages/Resume';
-import Write from './pages/Write';
+// import Write from './pages/Write';
 import Header from './components/Header';
+// import { QueryClient } from '@tanstack/react-query';
 
 function App() {
+  // const queryClient = new QueryClient();
   return (
-    <Router>
+    <Router basename={'/CNU_Blog/'}>
       <Routes>
         <Route element={<Header />}>
           <Route element={<Layout />}>
